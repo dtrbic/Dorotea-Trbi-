@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="slike/ikona2.jpg" type="image" size="16x16">
+  <meta charset="UTF-8">
+  <meta name="description" content="Stranica o meni">
+  <meta name="keywords" content="Dorotea Trbić, Elektrotehnička škola,Elektrotehnička škola Zagreb, Končar, galerija, moja galerija ">
+  <meta name="author" content="Dorotea Trbić">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O meni</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+body {
+	background-color:#99ebff;
+    
+
+}
+
+h1{
+text-align:center;
+font-family: "Luckiest Guy", cursive;
+font-weight: 400;
+font-style: normal; 
+font-weight: 400;  
+font-size:60px;
+color:#004d80;
+margin-bottom:5px;
+}
+
+p {
+font-family: "Elsie", serif;
+font-weight: 400;
+font-style: normal;
+text-align:center;
+font-size:23px;
+color:#660033;
+margin-left:15px;
+margin-right:15px;
+text-align: justify;
+padding-left: 100px;
+padding-right:100px;
+
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  font-size: 20px;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #006bb3;
+  padding: 0.4rem 0;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #003d66;
+}
+
+nav:has(a:hover) a:not(:hover) {
+  opacity: 0.5;
+}
+
+.gallerija {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.gallerija-objekt {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallerija-objekt:hover {
+    transform: scale(1.05);
+}
+
+.gallerija-objekt img {
+    width: 250px;         
+    height: 250px;        
+    object-fit: cover;    
+    border-radius: 10px;
+}
+
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+  margin-bottom:20px;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+
+video {
+    display: block;
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8); 
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Valentinovo</a>
+  <a href="o_meni.html">O meni</a>
+  <a href="slike/CV.pdf" target="_blank">PDF dokument</a>
+  
+</nav>
+
+<h1>Moja Galerija</h1>
+<p></p>
+
+<div class="gallerija"> 
+    <div class="gallerija-objekt">
+        <img src="slike/slika1.jpg" alt="stvari"> 
+        
+    </div>
+    <div class="gallerija-objekt">
+        <img src="slike/slika2.webp" alt="Slika 2"> 
+        
+    </div>
+    <div class="gallerija-objekt">
+        <img src="slike/slika3.jpg" alt="Slika 3"> 
+        
+    </div>
+	
+	<div class="gallerija-objekt">
+        <img src="slike/slika4.jpg" alt="Slika 3"> 
+        
+    </div>
+	
+	<div class="gallerija-objekt">
+        <img src="slike/slika5.jpg" alt="Slika 3"> 
+        
+    </div>
+	
+	<div class="gallerija-objekt">
+        <img src="slike/slika6.jpg" alt="Slika 3"> 
+        
+    </div>
+    </div>
+<center><a href="https://youtu.be/OOM6TiWJdps?si=NL0331CRYec4vdo4" target="_blank" class="button-51">yt video</a></center>	
+
+<video width="640" height="360" controls>
+    <source src="slike/moj_video.mp4" type="video/mp4">
+    Vaš preglednik ne podržava video tag.
+</video>
+<center><a id="playSoundButton"><button class="button-51" role="button">PRITISNI ME</button></center>
+<audio id="myAudio">
+    <source src="slike/zvuk.mp3" type="audio/mpeg">
+    Vaš preglednik ne podržava audio.
+</audio>
+<br>
+<br>
+
+
+<script>
+const button = document.getElementById('playSoundButton');
+const audio = document.getElementById('myAudio');
+
+button.addEventListener('click', (e) => {
+    e.preventDefault();  
+    audio.play();        
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="icon" href="slike/ikona.jpg" type="image" size="16x16">
+  <meta charset="UTF-8">
+  <meta name="description" content="Stranica za dan zaljubljenih">
+  <meta name="keywords" content="valentinovo, dan zaljubljenih, 14.2.">
+  <meta name="author" content="Dorotea Trbić">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentinovo</title>
+  
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap');
+
+  body {
+  background: linear-gradient(to top left, #ff99cc 2%, #ff6699 96%);
+
+}
+
+h1{
+text-align:center;
+font-family: "Luckiest Guy", cursive;
+font-weight: 400;  
+font-size:60px;
+color:#b30059;
+margin-bottom:5px;
+}
+
+h2{
+font-size:30px;
+text-align:center;
+color:#b30059;
+margin-top:5px;
+font-family: "Love Light", cursive;
+font-weight: 400;
+font-style: normal;
+
+}
+
+p {
+font-family: "Elsie", serif;
+font-weight: 400;
+font-style: normal;
+text-align:center;
+font-size:23px;
+color:#660033;
+margin-left:15px;
+margin-right:15px;
+text-align: justify;
+padding-left: 100px;
+padding-right:100px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cc0066;
+  padding: 0.4rem 0;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffb3e6;
+}
+
+nav:has(a:hover) a:not(:hover) {
+  opacity: 0.5;
+}
+.red {
+    display: flex;
+    align-items: center;        
+    justify-content: space-between;
+}
+
+.red img {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.footer {
+    background: rgb(255, 51, 187,0.6);
+    padding: 20px 0px;
+    font-family: 'Play', sans-serif;
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    text-align: center; 
+}
+
+.footer-column a {
+    color: white;
+    margin-right: 15px;
+}
+
+.footer-column a:hover {
+    color: #ff00bf;
+}
+
+.footer-column {
+    padding: 0 10px;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: white;
+}
+
+@charset "UTF-8";
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons  .fa-facebook-f, .fa-tiktok,  .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.tiktok {
+  background: #000000;
+}
+
+.rounded-social-buttons .social-button.tiktok:hover, .rounded-social-buttons .social-button.tiktok:focus {
+  color: #000000;
+  background: #fefefe;
+  border-color: #000000;
+}
+
+
+.rounded-social-buttons .social-button.instagram {
+  background: #f53b98;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #f53b98;
+  background: #fefefe;
+  border-color: #f53b98;
+}
+
+.pCijeli{
+      border: 2px solid #b30059;
+      border-radius: 10px;
+}
+
+.button-74 {
+  background-color: #b30059;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  color: #ffccef;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Bokor", system-ui;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.button-74:hover {
+  background-color: #ff1a8c;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+  
+</style>
+</head>
+
+<body>
+<nav>
+  <a href="index.html">Valentinovo</a>
+  <a href="o_meni.html">O meni</a>
+  <a href="slike/CV.pdf" target="_blank">PDF dokument</a>
+  
+</nav>
+
+<div class="red">
+    <img src="slike/srca.gif">
+    <div>
+        <h1>Valentinovo</h1>
+    </div>
+    <img src="slike/srca.gif">
+</div>
+
+<h2><b>Dorotea Trbić</b></h2></div>
+
+<p  class="pCijeli"><b>Valentinovo</b> se slavi 14. veljače i poznato je kao dan zaljubljenih. Taj datum povezuje se sa svetim Valentinom, koji je prema legendi potajno vjenčavao zaljubljene parove u vrijeme kada to nije bilo dopušteno. Upravo zbog toga Valentinovo je postalo simbol ljubavi, odanosti i hrabrosti da se voli bez obzira na prepreke. Tijekom godina ovaj se dan proširio diljem svijeta te se danas obilježava na razne načine, od razmjene čestitki i poklona do provođenja zajedničkog vremena s voljenim osobama. Iako je često vezano uz romantičnu ljubav, Valentinovo može biti i prilika da pokažemo pažnju prijateljima, obitelji ili svima do kojih nam je stalo. Valentinovo je dan kada slavimo ljubav, bliskost i male geste koje imaju veliko značenje. To nije samo dan za poklone i cvijeće, već prilika da pokažemo koliko nam je netko važan. Ljubav se ne mora izražavati velikim riječima – ponekad je dovoljan osmijeh, zagrljaj ili iskrena poruka. Na Valentinovo se prisjećamo koliko je važno cijeniti ljude koje volimo i dijeliti s njima lijepe trenutke. To je dan koji nas podsjeća da je ljubav u malim stvarima i da je treba njegovati svaki dan, a ne samo jednom godišnje.</p>
+
+<center><a href="https://www.wish.hr/kako-je-nastalo-romanticno-valentinovo/" target="_blank"><button class="button-74" role="button"><b>KAKO JE NASTALO?</b></button></a></center>
+
+
+<p><i>Ponekad je dovoljno samo jedno srce koje kuca brže kad vidi drugo. Pogled koji traje mrvicu dulje i osmijeh koji se pojavi bez razloga. Ljubav se često skriva u sitnicama, u tišini između riječi i u osjećaju da nismo sami.
+Biti zaljubljen znači pronaći nekoga tko razumije i kad šutimo. Nekoga tko nam uljepša i običan dan i učini ga posebnim. Ljubav ne mora biti savršena — ona je lijepa baš zato što je iskrena.
+U svijetu punom žurbe, ljubav je mali predah. Topla misao, nježna riječ i osjećaj pripadnosti. I baš zato, zaljubljene stvari nikada ne izlaze iz mode</i></p>
+
+<p>Zaljubljenost je onaj tihi osjećaj koji se pojavi nenadano, a ostane dugo. To je trenutak kada nam se srce osmjehne prije nego usne, kada jedna misao može uljepšati cijeli dan. U zaljubljenosti svijet izgleda mekše, toplije i nekako bliže.
+Ljubav se ne krije u velikim riječima, već u malim djelima. U porukama za laku noć, u pogledu koji traži sigurnost, u strpljenju i razumijevanju. Biti zaljubljen znači imati nekoga tko zna naše slabosti, a ipak ostaje. Nekoga tko nas prihvaća takvima kakvi jesmo.
+Ponekad ljubav nije glasna. Ona je tiha i mirna, ali snažna. Ona daje osjećaj pripadnosti i sigurnosti, poput doma u kojem se uvijek možemo vratiti. Zaljubljenost nas uči kako slušati srcem, kako biti nježni i kako vjerovati.
+U svijetu koji se stalno mijenja, ljubav ostaje jedna od rijetkih stvari koje imaju istinsku vrijednost. Ona povezuje ljude, briše udaljenosti i daje smisao svakodnevici. Zaljubljene stvari nisu prolazne — one su ono što nas čini ljudima.</p>
+
+<footer class="footer">
+        <div class="footer-column">
+            
+            <p class="futer">hello@valentinovo.hr</p>
+        </div>
+
+        
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+       <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                   
+                    <a class="social-button tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                 
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+
+        <div class="row">
+            Valentinovo©|2024
+        </div>
+    </footer>
+</body>
+</html>
